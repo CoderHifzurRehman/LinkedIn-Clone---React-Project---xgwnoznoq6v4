@@ -11,7 +11,7 @@
   "dependencies": {
     "antd": "^5.2.1",
     "firebase": "^9.19.1",
-    "firebase-tools": "^0.1.6",
+    "firebase-tools": "^11.25.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "moment": "^2.29.4",
@@ -20,7 +20,7 @@
     "react-dom": "^18.2.0",
     "react-google-button": "^0.7.2",
     "react-icons": "^4.7.1",
-    "react-quill": "^0.0.2",
+    "react-quill": "^2.0.0",
     "react-router-dom": "^6.8.1",
     "react-toastify": "^9.1.2",
     "react-uuid": "^2.0.0",
