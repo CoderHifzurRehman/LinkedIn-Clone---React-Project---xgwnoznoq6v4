@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProfileCard from "./common/ProfileCard";
 import ProfileEdit from "./common/ProfileEdit";
+import "../CSS/HomeComponent.css";
 
 export default function ProfileComponent({ currentUser }) {
   const [isEdit, setisEdit] = useState(false);
@@ -9,7 +10,7 @@ export default function ProfileComponent({ currentUser }) {
     setisEdit(!isEdit);
   };
   return (
-    <div>
+    <div className="profile-main">
       {isEdit ? (
         <ProfileEdit onEdit={onEdit} currentUser={currentUser} />
       ) : (

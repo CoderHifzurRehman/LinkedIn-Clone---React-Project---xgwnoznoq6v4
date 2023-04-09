@@ -138,7 +138,7 @@ export default function ProfileCard({ onEdit, currentUser }) {
           <></>
         )}
       </div>
-
+          <div className="profile-bottom">
       <div className="post-status-main">
         {allStatuses?.map((posts) => {
           return (
@@ -147,6 +147,7 @@ export default function ProfileCard({ onEdit, currentUser }) {
             </div>
           );
         })}
+      </div>
       </div>
       </div>
     </>
