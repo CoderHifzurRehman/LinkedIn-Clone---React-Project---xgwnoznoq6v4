@@ -1,5 +1,5 @@
 # Linkedin-Clone
-This Linked in clone is have basic features as linkedin like login, signup, like, comment, add Post, edit profile, connections. In this website user have create their account to use this app. In this i used firebase for a database.
+This Linkedin clone is the clone of linkedin web app and have basic features as linkedin like login, signup, like, comment, add Post, edit profile, connections. In this website user have create their account to use this app. In this I used firebase for a database.
 
 # Preview
 ## Screenshot
@@ -19,7 +19,7 @@ This Linked in clone is have basic features as linkedin like login, signup, like
 ### Profile Page after edit profile
 ![profilePage](https://user-images.githubusercontent.com/120785266/230793649-ee3e24fd-aee1-41eb-bd1e-4de88c301eb0.PNG)
 
-### Create a post by clicking add a post button
+### Create a post by clicking start a post button
 ![StartPost](https://user-images.githubusercontent.com/120785266/230793652-92a21b87-3571-4134-9102-b935eec5e6da.PNG)
 
 ### Home Page after added post and edit profile
