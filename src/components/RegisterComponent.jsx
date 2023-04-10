@@ -13,7 +13,7 @@ export default function RegisterComponent() {
   const register = async () => {
     try {
       let res = await RegisterAPI(credentails.email, credentails.password);
-      toast.success("Account Created!");
+      toast.success("Account Created Sucessfully!");
       postUserData({
         userID: getUniqueID(),
         name: credentails.name,
@@ -25,7 +25,12 @@ export default function RegisterComponent() {
       localStorage.setItem("userEmail", res.user.email);
     } catch (err) {
       console.log(err);
-      toast.error("Cannot Create your Account");
+      if(err.code.toString().slice(5,err.code.length )==="admin-restricted-operation"){
+        toast.error("Please Fill All Inputs");
+      }
+      else{
+      toast.error(err.code.toString().slice(5,err.code.length ));
+      }
     }
   };
 
