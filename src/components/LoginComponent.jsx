@@ -26,17 +26,19 @@ export default function LoginComponent() {
   const googleSignIn = () => {
     let response = GoogleSignInAPI();
     console.log(response);
-    toast.success("Signed In to Linkedin!");
-      localStorage.setItem("userEmail", res.user.email);
-      navigate("/home");
+    
+      localStorage.setItem("userEmail", response.user.email);
+      
     postUserData({
       userID: getUniqueID(),
-      name: credentails.name,
+      name: credentails.email,
       password: credentails.password,
       email: credentails.email,
       imageLink:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png",
     });
+    toast.success("Signed In to Linkedin!");
+    navigate("/home");
   }
 
   return (
