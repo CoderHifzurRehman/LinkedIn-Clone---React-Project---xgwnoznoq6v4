@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { LoginAPI,GoogleSignInAPI } from "../api/AuthAPI";
 import LinkedinLogo from "../assets/linkedinLogo.png";
-import GoogleButton from "react-google-button";
+// import GoogleButton from "react-google-button";
 import { useNavigate } from "react-router-dom";
 import "../CSS/LoginComponent.css";
 import { toast } from "react-toastify";
@@ -23,23 +23,23 @@ export default function LoginComponent() {
     }
   };
 
-  const googleSignIn = () => {
-    let response = GoogleSignInAPI();
-    console.log(response);
+  // const googleSignIn = () => {
+  //   let response = GoogleSignInAPI();
+  //   console.log(response);
     
-      localStorage.setItem("userEmail", response.user.email);
+  //     localStorage.setItem("userEmail", response.user.email);
       
-    postUserData({
-      userID: getUniqueID(),
-      name: credentails.email,
-      password: credentails.password,
-      email: credentails.email,
-      imageLink:
-        "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png",
-    });
-    toast.success("Signed In to Linkedin!");
-    navigate("/home");
-  }
+  //   postUserData({
+  //     userID: getUniqueID(),
+  //     name: credentails.email,
+  //     password: credentails.password,
+  //     email: credentails.email,
+  //     imageLink:
+  //       "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png",
+  //   });
+  //   toast.success("Signed In to Linkedin!");
+  //   navigate("/home");
+  // }
 
   return (
     <div className="login-wrapper">
@@ -73,8 +73,8 @@ export default function LoginComponent() {
       </div>
       <hr className="hr-text" data-content="or" />
       <div className="google-btn-container">
-        <GoogleButton onClick={googleSignIn}
-        />
+        {/* <GoogleButton onClick={googleSignIn}
+        /> */}
         <p className="go-to-signup">
           New to LinkedIn?{" "}
           <span className="join-now" onClick={() => navigate("/register")}>
