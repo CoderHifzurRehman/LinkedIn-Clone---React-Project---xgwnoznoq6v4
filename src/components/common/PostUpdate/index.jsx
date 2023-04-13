@@ -7,7 +7,7 @@ import { getUniqueID } from "../../../helpers/getUniqueId";
 import PostsCard from "../PostsCard";
 import {AiOutlineUserSwitch} from "react-icons/ai";
 import "./index.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ConnectionsComponent from "../../../components/ConnectionsComponent";
 
 export default function PostStatus({ currentUser }) {
@@ -66,7 +66,7 @@ export default function PostStatus({ currentUser }) {
             <p className="ic-2">Grow Your Network</p>
             </div>
             <div className="connections-link">
-              <a href="/connections"><AiOutlineUserSwitch></AiOutlineUserSwitch></a>
+              <Link to="/connections"><AiOutlineUserSwitch></AiOutlineUserSwitch></Link>
             </div>
           </div>
           <div className="left-inner">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getAllUsers, addConnection } from "../api/FirestoreAPI";
 import ConnectedUsers from "./common/ConnectedUsers";
 import "../CSS/ConnectionsComponent.css";
+import { Link } from "react-router-dom";
 
 export default function ConnectionsComponent({ currentUser }) {
   const [users, setUsers] = useState([]);
@@ -25,7 +26,7 @@ export default function ConnectionsComponent({ currentUser }) {
           />
         );
       })}
-      <a href="/connections"><button className="show-more-btn">Show more</button></a>
+      <Link to="/connections"><button className="show-more-btn">Show more</button></Link>
     </div>
   ) : (
     <div className="connections-main">No Connections to Add!</div>
